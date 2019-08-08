@@ -2,10 +2,7 @@
 
 
 ('Elapsed :', '0:00:07.818257')
-
-
 ('Elapsed :', '0:00:07.698347')
-
 ('Elapsed :', '0:00:07.816317')
 ('Elapsed :', '0:00:07.682909')
 ('Elapsed :', '0:00:07.744458')
@@ -23,23 +20,14 @@ Elapsed0:00:09.333814
 # Unthreaded test:
 
 7.338054
-
 7.244921
-
 7.297161
-
 7.302890
-
 7.292005
-
 7.311431
-
 7.240286
-
 7.309600
-
 7.358819
-
 7.264236
 
 # Threaded Test
@@ -56,9 +44,7 @@ Elapsed0:00:09.333814
 6.57782
 6.69391
 
-
 ## 4 Threads:
-
 
 3.5229
 3.70769
@@ -72,7 +58,6 @@ Elapsed0:00:09.333814
 
 ## 8 Threads:
 
-
 3.42026
 4.05234
 3.53812
@@ -83,6 +68,7 @@ Elapsed0:00:09.333814
 4.22828
 3.97646
 4.07359
+
 
 ## 16 Threads:
 
@@ -99,7 +85,6 @@ Elapsed0:00:09.333814
 
 
 ## 32 Threads:
-
 
 2.614
 2.43161
@@ -129,6 +114,7 @@ Elapsed0:00:09.333814
 2.23626
 
 
+
 ## -O1  Basic optimisations for speed and size, compiles a little
 
 1.44821
@@ -142,6 +128,7 @@ Elapsed0:00:09.333814
 1.28936
 1.41274
 
+
 ## -O2  More optimisations focused on speed
 
 1.36373
@@ -154,6 +141,7 @@ Elapsed0:00:09.333814
 1.3804
 1.47102
 1.51165
+
 
 ## -O3  Many optimisations for speed. Compiled code may be larger
 than lower levels
@@ -169,6 +157,8 @@ than lower levels
 1.18516
 1.28229
 
+
+
 ## -O fast Breaks a few rules to go much faster. Code might not
 behave as expected
 
@@ -183,9 +173,7 @@ behave as expected
 1.59374
 1.09755
 
-
-## -Os   Optimise for smaller compiled code size. Useful if you
-dont have much storage space
+## -Os   Optimise for smaller compiled code size. Useful if you dont have much storage space
 
 1.72723
 1.05947
@@ -211,8 +199,8 @@ dont have much storage space
 1.41115
 1.44453
 
-## -Og   Optimise for debugging, with slower code
 
+## -Og   Optimise for debugging, with slower code
 
 2.34118
 1.444
@@ -227,7 +215,6 @@ dont have much storage space
 
 
 ## -funroll-loops   Can be added to any of the above, unrolls loops into repeated assembly in some cases to improve speed at cost of size
-
 
 2.24055
 2.6681
@@ -270,14 +257,6 @@ dont have much storage space
 
 # Bit Widths
 
-float is a 32 bit IEEE 754 single precision Floating Point Number1 bit for the sign, (8 bits 
-for the exponent, and 23* for the value), i.e. float has 7 decimal digits of precision. (https://www.geeksforgeeks.org/difference-float-double-c-cpp/)
-
-About __fp16 (http://www.keil.com/support/man/docs/armclang_ref/armclang_ref_sex1519040854421.htm)
-
-https://en.wikipedia.org/wiki/C_data_types
-
-
 ## Double
 
 1.65078 
@@ -289,7 +268,8 @@ https://en.wikipedia.org/wiki/C_data_types
 1.68276 
 1.49411 
 2.08922 
-1.55922 
+1.55922
+
 
 ## __fp16
 
@@ -332,7 +312,6 @@ https://en.wikipedia.org/wiki/C_data_types
 1.42853 
 1.38275 
 
-
 ## vfpv4 Version 4 of the floating point unit
 
 1.05744 
@@ -348,7 +327,6 @@ https://en.wikipedia.org/wiki/C_data_types
 
 ## neon-fp-armv8 Advanced SIMD with Floating point
 
-
 1.48687 
 1.27609 
 1.46718 
@@ -359,6 +337,7 @@ https://en.wikipedia.org/wiki/C_data_types
 1.0765 
 1.63759 
 1.35233 
+
 
 
 ## neon-fp16 Advanced SIMD with support for half-precision
@@ -374,6 +353,7 @@ https://en.wikipedia.org/wiki/C_data_types
 1.44655 
 1.07739 
 
+
 ## vfpv3xd Single Precision floating point
 
 1.40567 
@@ -387,8 +367,8 @@ https://en.wikipedia.org/wiki/C_data_types
 1.76989 
 1.75197 
 
-## vfpv3xd-fp16 Single precision floating point, plus support for fp16
 
+## vfpv3xd-fp16 Single precision floating point, plus support for fp16
 1.37254 
 1.24734 
 1.75296 
@@ -402,7 +382,6 @@ https://en.wikipedia.org/wiki/C_data_types
 
 
 ## __fp16 with -O2 -mfp16-format=ieee -mfpu=vfpv3xd-fp16 -mfpu=vfpv3-fp16 -mfpu=vfpv3xd-fp16
-
 
 1.49655 
 1.30155 
