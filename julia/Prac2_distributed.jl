@@ -1,12 +1,14 @@
+using Distributed
 include("data.jl")
 c=carrier.*30
 d=data.*30
 N=length(c)
+
 result=Array{Float64}(undef, N)
 
 function test()
-	for i = 1:N
-	    result[i]=c[i]*d[i]
+	@sync @distributed for i = 1:length(c)
+	    @inbounds result[i]=c[i]*d[i]
 	end
 end
 
