@@ -1,6 +1,5 @@
 # Prac 2 
 Working with benchmarking and architecture specific optimisations.
-Special thanks to [KaliumPuceon](https://github.com/KaliumPuceon) for their contributions to the Threaded C implementation.
 
 ## Folder Contents
 #### Python
@@ -19,6 +18,11 @@ Special thanks to [KaliumPuceon](https://github.com/KaliumPuceon) for their cont
   - Prac2_threaded.c and Prac2_threaded.h are source for the threaded version
 - makefile
 
+#### julia
+-Prac2_julia.jl - source code for julia 
+-Prac2_threaded.jl - source code for threaded version
+-Prac2_distributed.jl - source code for distributed computing version
+-data.jl - source data, exactly the same as the python data
 ## Running the Prac
 #### Python
 To run the Python benchamrk, enter into the Python directory, and run
@@ -33,6 +37,11 @@ All running of the C code is done through ```make``` commands.
 - ```make threaded``` will compile the threaded version of Prac 2
 - ```make run_threaded``` will run the threaded version
 - ```make clean``` will clean the object and binary files that have been compiled
+
+#### Julia
+with julia 1.1 installed, the julia scripts can be run using 
+```julia Prac2_julia.jl```
+this will run the for loop eleven times, since the first time the for loop is run it takes much longer.
 
 ## Editing configurations
 To run some experiments for C, you need to make edits to certain files and then recompile the relevant practical (threaded/unthreaded).
