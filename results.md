@@ -238,8 +238,7 @@ Elapsed0:00:09.333814
 1.51165
 
 
-## -O3  Many optimisations for speed. Compiled code may be larger
-than lower levels
+## -O3  Many optimisations for speed. Compiled code may be larger than lower levels
 
 1.54963
 
@@ -263,99 +262,161 @@ than lower levels
 
 
 
-## -O fast Breaks a few rules to go much faster. Code might not
-behave as expected
+## -O fast Breaks a few rules to go much faster. Code might not behave as expected
 
 1.45682
+
 1.25275
+
 1.35728
+
 1.23468
+
 1.24353
+
 1.2878
+
 1.38947
+
 1.58447
+
 1.59374
+
 1.09755
 
 ## -Os   Optimise for smaller compiled code size. Useful if you dont have much storage space
 
 1.72723
+
 1.05947
+
 1.73155
+
 1.4666
+
 1.41764
+
 1.28296
+
 1.19359
+
 1.32093
+
 1.23983
+
 1.35613
 
 ## -Ofast 
 
 1.16094
+
 1.36297
+
 1.51573
+
 1.38896
+
 1.1863
+
 1.60151
+
 1.46781
+
 1.34141
+
 1.41115
+
 1.44453
 
 
 ## -Og   Optimise for debugging, with slower code
 
 2.34118
+
 1.444
+
 1.63264
+
 1.73035
+
 1.7603
+
 2.07154
+
 1.46379
+
 1.79306
+
 2.01217
+
 2.18238
 
 
 ## -funroll-loops   Can be added to any of the above, unrolls loops into repeated assembly in some cases to improve speed at cost of size
 
 2.24055
+
 2.6681
+
 2.35878
+
 2.75607
+
 1.92566
+
 2.5092
+
 3.47075
+
 1.89962
+
 2.56414
+
 2.05331
 
 ## -O1 -O2 -O3 -Ofast -Os -funroll-loops
 
 1.28959
+
 1.0987
+
 1.27344
+
 1.23209
+
 1.42199
+
 1.48876
+
 1.43902
+
 1.34433
+
 1.40037
+
 1.7597
 
 
 ## -O2 -O -Os -Ofast
 
 1.14369 
+
 1.39478 
+
 1.49707 
+
 1.25676 
+
 1.47051 
+
 1.6955 
+
 1.30644 
+
 1.03874 
+
 1.40608 
+
 1.35144 
 
 
@@ -364,28 +425,46 @@ behave as expected
 ## Double
 
 1.65078 
+
 1.51599 
+
 1.27458 
+
 1.55875 
+
 1.22771 
+
 1.8937 
+
 1.68276 
+
 1.49411 
+
 2.08922 
+
 1.55922
 
 
 ## __fp16
 
 4.48706 
+
 2.79999 
+
 2.19004 
+
 3.31399 
+
 3.74441 
+
 4.15222 
+
 1.97108 
+
 1.95671 
+
 3.61295 
+
 3.10665 
 
 # hardware level support
@@ -393,53 +472,89 @@ behave as expected
 ## vfpv3 Version 3 of the floating point unit
 
 1.40806 
+
 1.40937 
+
 1.22228 
+
 1.24249 
+
 1.26494 
+
 1.52124 
+
 1.21088 
+
 1.43603 
+
 1.41546 
+
 1.16958 
 
 ## vfpv3-fp16 Equivalent to VFPv3 but adds hfp16 support
 
 1.2203 
+
 1.04802 
+
 1.61921 
+
 1.45978 
+
 1.58145 
+
 1.59692 
+
 1.47968 
+
 1.74806 
+
 1.42853 
+
 1.38275 
 
 ## vfpv4 Version 4 of the floating point unit
 
 1.05744 
+
 1.77389 
+
 1.84405 
+
 1.44369 
+
 1.3328 
+
 1.51358 
+
 1.48478 
+
 1.69489 
+
 1.21239 
+
 1.32765 
 
 ## neon-fp-armv8 Advanced SIMD with Floating point
 
 1.48687 
+
 1.27609 
+
 1.46718 
+
 1.23583 
+
 1.42728 
+
 1.29874 
+
 1.34588 
+
 1.0765 
+
 1.63759 
+
 1.35233 
 
 
@@ -447,68 +562,113 @@ behave as expected
 ## neon-fp16 Advanced SIMD with support for half-precision
 
 1.5177 
+
 1.4702 
+
 1.18307 
+
 1.60343 
+
 1.18734 
+
 1.8552 
+
 1.3889 
+
 1.78811 
+
 1.44655 
+
 1.07739 
 
 
 ## vfpv3xd Single Precision floating point
 
 1.40567 
+
 1.55171 
+
 1.93889 
+
 1.29728 
+
 1.1589 
+
 1.36109 
+
 1.59494 
+
 1.54655 
+
 1.76989 
+
 1.75197 
 
 
 ## vfpv3xd-fp16 Single precision floating point, plus support for fp16
 1.37254 
+
 1.24734 
+
 1.75296 
+
 1.29911 
+
 1.2689 
+
 1.28629 
+
 1.2927 
+
 1.61332 
+
 1.46296 
+
 1.32588 
 
 
 ## __fp16 with -O2 -mfp16-format=ieee -mfpu=vfpv3xd-fp16 -mfpu=vfpv3-fp16 -mfpu=vfpv3xd-fp16
 
 1.49655 
+
 1.30155 
+
 1.57114 
+
 1.49447 
+
 1.6241 
+
 1.26968 
+
 1.34478 
+
 1.50181 
+
 1.46244 
+
 1.18202 
 
 ## Float with -O2 -mfpu=vfpv4 -mfpu=neon-fp-armv8 -mfpu=vfpv3xd
 
 1.34447 
+
 1.57931 
+
 1.22067 
+
 1.39937 
+
 1.68452 
+
 1.32124 
+
 1.21489 
+
 1.36593 
+
 1.22171 
+
 1.31312 
 
 
@@ -518,44 +678,68 @@ behave as expected
 ## Unthreaded
 
 0.397895
+
 0.392328
+
 0.374699
+
 0.374352
+
 0.378639
+
 0.376649
+
 0.374305
+
 0.374722
+
 0.374227
+
 0.374502
-
-
-
 
 
 ## Threaded
 
 0.283856
+
 0.277404
+
 0.277800
+
 0.271520
+
 0.270969
+
 0.271036
+
 0.271035
+
 0.270844
+
 0.270869
+
 0.271134 
 
 ## Distributed
 
 0.000031
+
 0.000027
+
 0.000028
+
 0.000028
+
 0.000027
+
 0.000027
+
 0.000028
+
 0.000028
+
 0.000027
+
 0.000027
 
 
