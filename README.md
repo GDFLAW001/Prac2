@@ -19,10 +19,10 @@ Working with benchmarking and architecture specific optimisations.
 - makefile
 
 #### julia
--Prac2_julia.jl - source code for julia 
--Prac2_threaded.jl - source code for threaded version
--Prac2_distributed.jl - source code for distributed computing version
--data.jl - source data, exactly the same as the python data
+- Prac2_julia.jl - source code for julia 
+- Prac2_threaded.jl - source code for threaded version
+- Prac2_distributed.jl - source code for distributed computing version
+- data.jl - source data, exactly the same as the python data
 ## Running the Prac
 #### Python
 To run the Python benchamrk, enter into the Python directory, and run
